@@ -26,6 +26,7 @@ Meu portfólio inclui projetos desenvolvidos com uma ampla gama de tecnologias:
 
 [Link do portfolio](https://viniciusgomes.tech)
 
+
 ## Contato
 
 - Email: [contact@viniciusgomes.tech]
