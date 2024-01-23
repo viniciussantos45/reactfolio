@@ -11,14 +11,16 @@
 
 		<script>
 			// An attempt will be made to find the path after the '#' symbol, and if it's not there, use 'home' as a default.
-			const path = location.hash.replace(/^#\/?|\/$/g, "").split("/");
-			location.replace(
-				location.pathname
-					.split("/")
-					.slice(0, -path.length)
-					.join("/")
-					.replace(/\/$/, "") + location.hash
-			);
+			document.addEventListener("DOMContentLoaded", function () {
+				// Extrai o caminho da URL
+				const path = window.location.pathname;
+
+				// Verifica se não está na raiz (ou seja, há algum caminho específico)
+				if (path && path !== "/") {
+					// Substitui a URL atual pelo caminho, mantendo o estado do histórico
+					window.history.replaceState({}, "", path);
+				}
+			});
 		</script>
 	</head>
 	<body>
