@@ -74,6 +74,7 @@ const Homepage = () => {
 
 	const h1Style = {
 		fontFamily: "var(--secondary-font)",
+		color: "var(--primary-color)",
 		marginLeft: "1rem",
 		marginBlockStart: "0",
 		marginBlockEnd: "0",
@@ -163,16 +164,18 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
+							{INFO.socials.stackoverflow && (
+								<a
+									href={INFO.socials.stackoverflow}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faStackOverflow}
+										className="homepage-social-icon"
+									/>
+								</a>
+							)}
 							<a
 								href={INFO.socials.instagram}
 								target="_blank"
