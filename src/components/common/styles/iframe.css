@@ -1,0 +1,30 @@
+div.iframe-container {
+    position: fixed;
+    background-color: var(--background-navbar-color);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 99999;
+}
+
+div.iframe-container iframe {
+    overflow-x: hidden;
+}
+
+button.iframe-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 30px;
+    cursor: pointer;
+}

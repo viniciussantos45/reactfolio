@@ -1,0 +1,56 @@
+.light-theme  {
+	/* ------- colors ------- */
+	--primary-color: #27272a;
+	--secondary-color: #65656d;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--background-navbar-color: #ffffff55;
+	--background-page-content-color: white;
+	--background-color: #fafafa;
+	--border-color: #f4f4f5;
+	--link-color: #FFC659;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Heebo", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+
+	/* ------- markdown ------- */
+	--canvas-subtle: #f4f4f5;
+	--code-syntax-constant: #005cc5;
+	--code-syntax-entity: #6f42c1;
+	--code-syntax-keyword: #d73a49;
+	--code-syntax-storageModifierImport: #24292e;
+	--code-syntax-string: #032f62;
+	--code-syntax-markup: #22863a;
+}
+
+
+.dark-theme {
+	/* ------- colors ------- */
+	--primary-color: #e4e4e7;
+	--secondary-color: #acacb4;
+	--tertiary-color: #65656d;
+	--quaternary-color: #27272a;
+	--background-navbar-color: #00000055;
+	--background-page-content-color: #101011;
+	--background-color: #141416;
+	--border-color: #27272a;
+	--link-color: #FFC659;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Heebo", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+
+	/* ------- markdown ------- */
+	--canvas-subtle: #202022;
+	--code-syntax-constant: #3591fa;
+	--code-syntax-entity: #8753e7;
+	--code-syntax-keyword: #f34758;
+	--code-syntax-storageModifierImport: #adb9c2;
+	--code-syntax-string: #015cc4;
+	--code-syntax-markup: #22863a;
+}

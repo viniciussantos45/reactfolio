@@ -1,0 +1,130 @@
+nav.lang-nav {
+    position: fixed;
+    top: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    padding: 5px 5px;
+    
+    border-radius: 999px;
+
+    background-color: var(--background-navbar-color);
+	backdrop-filter: blur(10px);
+    
+	z-index: 999;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100px;
+    
+}
+
+.lang-menu {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-colo);
+    position: absolute;
+    top: 45px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: var(--quaternary-color);
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul li button {
+    /* remove default style button */
+    background: none;
+    border: none;
+    cursor: pointer;    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+div.selected-lang span {
+    height: 25px;
+}
+
+div.selected-lang svg {
+    margin: 0;
+    padding: 0;
+    fill: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+    nav.lang-nav {
+        top: 80px;
+        right: 30px;
+    }
+
+    .lang-menu .selected-lang {
+        font-size: 0.7rem;
+    }
+
+    div.selected-lang span {
+        height: 20px;
+    }
+}
