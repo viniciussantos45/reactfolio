@@ -29,4 +29,4 @@ Meu portfólio inclui projetos desenvolvidos com uma ampla gama de tecnologias:
 ## Contato
 
 - Email: [contact@viniciusgomes.tech]
-- [LinkedIn](https://www.linkedin.com/in/vinicius-gomes-384397156/)]
+- [LinkedIn](https://www.linkedin.com/in/vinicius-gomes-384397156/)
