@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { X } from "@phosphor-icons/react";
 
 import { useTranslation } from "react-i18next";
 
@@ -40,7 +41,7 @@ export default function Iframe({ src }) {
 							setShow(false);
 						}}
 					>
-						X
+						<X size={32} weight="fill" />
 					</button>
 					<iframe
 						src={src}

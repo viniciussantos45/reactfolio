@@ -86,6 +86,7 @@ const Homepage = () => {
 
 	const divLogoStyle = {
 		marginLeft: "1rem",
+		color: "var(--primary-color)",
 		display: stayLogo ? "none" : "flex",
 		flexDirection: "column",
 	};

@@ -12,18 +12,13 @@
 		<script>
 			// An attempt will be made to find the path after the '#' symbol, and if it's not there, use 'home' as a default.
 			document.addEventListener("DOMContentLoaded", function () {
-				// Extrai o caminho da URL ignorando os slashes no início e no fim
-				const path = location.pathname
-					.replace(/^\/|\/$/g, "")
-					.split("/");
+				// Extrai o caminho da URL
+				const path = window.location.pathname;
 
-				// Verifica se a URL atual é mais longa do que a base da URL do site
-				if (path.length > 1) {
-					// Reconstrói a URL considerando o caminho
-					const newPath = path.join("/");
-
-					// Substitui a URL atual pela reconstruída
-					location.replace("/" + newPath);
+				// Verifica se não está na raiz (ou seja, há algum caminho específico)
+				if (path && path !== "/") {
+					// Substitui a URL atual pelo caminho, mantendo o estado do histórico
+					window.history.replaceState({}, "", path);
 				}
 			});
 		</script>
