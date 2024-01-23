@@ -49,6 +49,7 @@ const ReadArticle = () => {
 		loadMd();
 
 		window.scrollTo(0, 0);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [article]);
 
 	useEffect(() => {
@@ -61,6 +62,7 @@ const ReadArticle = () => {
 		return () => {
 			i18n.off("languageChanged", handleLanguageChange);
 		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [i18n]);
 
 	ArticleStyle = styled.div`
