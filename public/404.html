@@ -10,15 +10,11 @@
 		<title>Vinicius Gomes</title>
 
 		<script>
-			// An attempt will be made to find the path after the '#' symbol, and if it's not there, use 'home' as a default.
-			document.addEventListener("DOMContentLoaded", function () {
-				// Extrai o caminho da URL
+			document.addEventListener("DOMContentLoaded", (event) => {
+				// Verifica se a URL tem um caminho que precisa ser roteado
 				const path = window.location.pathname;
-
-				// Verifica se não está na raiz (ou seja, há algum caminho específico)
-				if (path && path !== "/") {
-					// Substitui a URL atual pelo caminho, mantendo o estado do histórico
-					window.history.replaceState({}, "", path);
+				if (path && path !== "/" && path !== "/index.html") {
+					window.history.replaceState(null, "", path);
 				}
 			});
 		</script>
